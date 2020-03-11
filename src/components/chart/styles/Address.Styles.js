@@ -1,0 +1,100 @@
+import {Dimensions} from 'react-native';
+import CommonStyle from './CommonStyle';
+const height = Dimensions.get('window').height;
+export default {
+	container1: {
+		flex: 1,
+		justifyContent: 'center',
+		alignItems: 'center',
+		backgroundColor: 'rgba(52, 52, 52, 0.5)',
+	},
+	container2: {
+		flex: 1,
+		justifyContent: 'center',
+		alignItems: 'center',
+		backgroundColor: 'rgba(52, 52, 52, 0.5)',
+	},
+	modelView: {
+		width: '60%',
+		height: height - height * 0.5,
+		backgroundColor: 'white',
+		borderRadius: 10,
+		elevation: 8,
+	},
+	header: {
+		height: '15%',
+		paddingHorizontal: 15,
+		flexDirection: 'row',
+		justifyContent: 'space-between',
+		alignItems: 'center',
+		borderBottomColor: '#969696',
+		borderBottomWidth: 1,
+	},
+	search: {
+		width: '100%',
+		height: '10%',
+		paddingHorizontal: 15,
+		flexDirection: 'row',
+		alignItems: 'center',
+		borderBottomColor: '#969696',
+		borderBottomWidth: 1,
+	},
+	stepViewSelected: {
+		width: 24,
+		height: 24,
+		marginHorizontal: 5,
+		backgroundColor: CommonStyle.buttonColor,
+		borderRadius: 12,
+		alignItems: 'center',
+		justifyContent: 'center',
+	},
+	stepViewUnSelected: {
+		width: 24,
+		height: 24,
+		marginHorizontal: 5,
+		backgroundColor: CommonStyle.textColor2,
+		borderRadius: 12,
+		alignItems: 'center',
+		justifyContent: 'center',
+	},
+	stepViewText: {
+		fontSize: CommonStyle.labelTextSize,
+		color: CommonStyle.textColorWhite,
+	},
+	labelViewTextSelected: {
+		fontSize: CommonStyle.textSize,
+		color: CommonStyle.buttonColor,
+	},
+	labelViewTextUnSelected: {
+		fontSize: CommonStyle.textSize,
+		color: CommonStyle.textColor2,
+	},
+	itemList: {height: 40, justifyContent: 'center', marginHorizontal: 24},
+	itemListView: {borderBottomWidth: 1, borderBottomColor: '#cbcbcb'},
+	iconX: {width: 23, height: 23, marginHorizontal: CommonStyle.margin8},
+	searchIcon: {width: 20, height: 20},
+	searchInput: {
+		alignItems: 'center',
+		justifyContent: 'center',
+		width: '100%',
+		paddingLeft: CommonStyle.margin8,
+	},
+	title: {
+		fontSize: CommonStyle.titleCardSize,
+		fontWeight: 'bold',
+		marginLeft: CommonStyle.margin8,
+	},
+	titleVal: {
+		fontSize: CommonStyle.titleCardSize,
+		fontWeight: 'bold',
+		color: CommonStyle.buttonColor,
+	},
+	textSize14: {fontSize: CommonStyle.textSize},
+	viewLineHorizontal: {
+		width: CommonStyle.margin16,
+		marginLeft: CommonStyle.margin8,
+		marginRight: CommonStyle.margin8,
+		backgroundColor: CommonStyle.borderColor,
+		height: CommonStyle.borderWidth,
+	},
+};
